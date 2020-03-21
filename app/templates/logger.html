@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BLT - Logger</title>
+    <!-- web3 js library -->
+    <script type="text/javascript" src="static/js/web3-0.20.3.min.js"></script>
+
+    <!-- BLT js library -->
+    <script src="static/js/blt-lib.js"></script>
+    <script src="static/js/contract.js"></script>
+
+    <!-- for app -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="static/js/sha256.js"></script>
+    <script src="static/js/logger.js"></script>
+  </head>
+  <body>
+    <h1>BLT Logger</h1>
+    <a href="/logger/tutorial">Tutorial</a>
+
+    <h3>Your Ethereum address</h3>
+    <p id="eth_addr">None</p>
+    <button id="eth_enable">Connect to MetaMask</button>
+
+    <h3>Your contract address</h3>
+    <p id="contract_addr">None</p>
+    <input type="text" id="contract_addr_input" placeholder="Contract address">
+    <button id="contract_addr_btn" type="button">Submit</button>
+
+    <h3>Your Name</h3>
+    <p id="owner_name">None</p>
+
+    <h3>Project name</h3>
+    <p id="project_name"></p>
+
+    <h3>Existing phases</h3>
+    <p id="phase_names"></p>
+
+    <h3>Current working phase</h3>
+    <p id="phase_names"></p>
+    <select id="cur_phase_select">
+      <option value="">Select a phase</option>
+    </select>
+    <button id="cur_phase_btn" type="button">Submit</button>
+
+    <h3>Phase records</h3>
+    <span id="phase_records" style="white-space: pre-line"></span>
+
+    <h3>Add a new record</h3>
+    Record name:
+    <input type="text" id="add_record_name_input" placeholder="Record name">
+    <br><br>
+    <textarea id="add_record_input" placeholder="Record data" style="font-size: 12pt; width: 50%; height: 300px;"></textarea>
+    <br>
+    Record hash (sha256):
+    <button id="cal_record_hash_btn" type="button">Calculate</button>
+    <p id="record_hash"></p>
+    <button id="add_record_btn" type="button">Submit record</button>
+
+    <h3>Add a new phase</h3>
+    <input type="text" id="add_phase_input" placeholder="Phase name">
+    <button id="add_phase_btn" type="button">Submit</button>
+
+    <h3>Commit a phase</h3>
+    <input type="text" id="commit_phase_input" placeholder="Phase name">
+    <button id="commit_phase_btn" type="button">Submit</button>
+
+    <h3>Calculate hash of a phase</h3>
+    <input type="text" id="cal_phase_hash_input" placeholder="Phase name">
+    <button id="cal_phase_hash_btn" type="button">Submit</button>
+
+    <h3>Get phase information by name</h3>
+    <p id="phase_info"></p>
+    <input type="text" id="phase_info_input" placeholder="Phase name">
+    <button id="phase_info_btn" type="button">Submit</button>
+
+  </body>
+</html>

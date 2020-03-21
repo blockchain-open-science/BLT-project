@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BLT - Publisher</title>
+    <!-- web3 js library -->
+    <script type="text/javascript" src="static/js/web3-0.20.3.min.js"></script>
+
+    <!-- BLT js library -->
+    <script src="static/js/blt-lib.js"></script>
+    <script src="static/js/contract.js"></script>
+
+    <!-- for app -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="static/js/publisher.js"></script>
+  </head>
+  <body>
+    <h1>Publisher</h1>
+
+    <h3>Create a project</h3>
+    Default template (ver 2.4) <a href="static/contract/main-v2.4.sol">Source</a>
+    <br>
+
+    <input type="text" id="deploy_name_input" placeholder="Project Name">
+    Frozen <input type="checkbox" id="deploy_is_frozen_cb">
+    <br>
+    <button id="deploy_default_btn">Deploy</button>
+
+    <h3>Your Ethereum address</h3>
+    <p id="eth_addr">None</p>
+
+    <h3>Your contract address</h3>
+    <p id="contract_addr">None</p>
+  </body>
+</html>

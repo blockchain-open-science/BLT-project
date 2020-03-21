@@ -1,0 +1,22 @@
+1. Install MetaMask browser plugin.
+(For Google Chrome: https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
+
+2. Follow MetaMask's instructions to create an Ethereum account. Click on the button at the top of MetaMask's window and select `Ropsten Test Network`. You may need to get some free Ether from test faucets before you start using BLT. (https://faucet.metamask.io/)
+
+3. Tell admin (the project creator/contract deployer) your Ethereum account address and your nickname. Let admin add you as a team member of your project.
+
+4. Go to /logger, check if `Your Ethereum address` shows your address. If it does not, then click `Connect to MetaMask` and allow the web app to connect to your account.
+
+5. A project contains multiple phases, and a phase contains multiple records with no limitation on the number of records.
+
+6. Every time when interacting with the BLT backend (contract on Ethereum), confirm the transaction in the pop-up MetaMask window, and wait until the transaction is successfully executed (which will be notified by MetaMask).
+
+7. To create a new phase, input the name of the phase and click `Submit`.
+BUG: The name of a phase should not only contain numbers.
+
+8. To create a new record of a phase, first select the phase in `Current working phase`, and click `Submit`. After inputting the name of the record and its data, click `Submit record`. If successful, the new record will be displayed in the `Phase records` section.
+BUG: The name of a record should not only contain numbers.
+
+9. To commit a phase, input the name of the phase and click `Submit`.
+
+10. After a phase is committed, new records can no longer be added to this phase. However, the web app will store the new records on server.
